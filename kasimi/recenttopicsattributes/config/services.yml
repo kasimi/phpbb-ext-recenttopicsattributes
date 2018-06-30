@@ -1,0 +1,7 @@
+services:
+    kasimi.recenttopicsattributes.listener:
+        class: kasimi\recenttopicsattributes\event\main_listener
+        arguments:
+            - '@?ernadoo.qte'
+        tags:
+            - { name: event.listener }
